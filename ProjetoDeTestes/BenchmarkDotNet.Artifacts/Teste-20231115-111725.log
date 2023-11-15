@@ -1,0 +1,28 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\mwsbrito\source\repos\ProjetoDeTestes\ProjetoDeTestes\bin\Release\net6.0\907aad18-e9d1-4afa-8dd1-1c6bc90ebb91
+// command took 0.85 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\Users\mwsbrito\source\repos\ProjetoDeTestes\ProjetoDeTestes\bin\Release\net6.0\907aad18-e9d1-4afa-8dd1-1c6bc90ebb91
+// command took 2.08 sec and exited with 0
+// ***** Done, took 00:00:03 (3 sec)   *****
+// Found 2 benchmarks:
+//   Teste.escreveArquivo: DefaultJob
+//   Teste.escreveArquivo2: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Teste.escreveArquivo: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 907aad18-e9d1-4afa-8dd1-1c6bc90ebb91.dll --anonymousPipes 1416 1404 --benchmarkName Teste.escreveArquivo --job Default --benchmarkId 0 in C:\Users\mwsbrito\source\repos\ProjetoDeTestes\ProjetoDeTestes\bin\Release\net6.0\907aad18-e9d1-4afa-8dd1-1c6bc90ebb91\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.10
+// Runtime=.NET 6.0.24 (6.0.2423.51814), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT,AvxVnni VectorSize=256
+// Job: DefaultJob
+
