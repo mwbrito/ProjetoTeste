@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mwsbrito\\source\\repos\\ProjetoDeTestes\\ProjetoDeTestes\\ProjetoDeTestes.csproj": {}
+    "C:\\Users\\mwsbrito\\source\\repos\\ProjetoTeste\\ProjetoDeTestes\\ProjetoDeTestes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mwsbrito\\source\\repos\\ProjetoDeTestes\\ProjetoDeTestes\\ProjetoDeTestes.csproj": {
+    "C:\\Users\\mwsbrito\\source\\repos\\ProjetoTeste\\ProjetoDeTestes\\ProjetoDeTestes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoDeTestes\\ProjetoDeTestes\\ProjetoDeTestes.csproj",
+        "projectUniqueName": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoTeste\\ProjetoDeTestes\\ProjetoDeTestes.csproj",
         "projectName": "ProjetoDeTestes",
-        "projectPath": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoDeTestes\\ProjetoDeTestes\\ProjetoDeTestes.csproj",
+        "projectPath": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoTeste\\ProjetoDeTestes\\ProjetoDeTestes.csproj",
         "packagesPath": "C:\\Users\\mwsbrito\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoDeTestes\\ProjetoDeTestes\\obj\\",
+        "outputPath": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoTeste\\ProjetoDeTestes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mwsbrito\\AppData\\Roaming\\NuGet\\NuGet.Config",

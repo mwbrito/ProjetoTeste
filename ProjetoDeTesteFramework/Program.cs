@@ -3,6 +3,7 @@ using BenchmarkDotNet.Running;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ProjetoDeTesteFramework
@@ -12,7 +13,6 @@ namespace ProjetoDeTesteFramework
         private static void Main(string[] args)
         {
             var resultado = BenchmarkRunner.Run<Teste>();
-            //Teste teste = new Teste();
         }
     }
 
@@ -51,7 +51,6 @@ namespace ProjetoDeTesteFramework
             combinacoes.AddRange(combinacoes3);
             combinacoes2.AddRange(combinacoes3.OrderBy(x => x));
             combinacoes4.UnionWith(combinacoes2);
-
         }
 
 
@@ -73,11 +72,6 @@ namespace ProjetoDeTesteFramework
             );
         }
         [Benchmark]
-        public void TesteComListaAny()
-        {
-            combinacoes.Any(x => combinacoes2.Contains(x));
-        }
-        [Benchmark]
         public void TesteComHashSet()
         {
             foreach (string s in combinacoes3)
@@ -85,15 +79,6 @@ namespace ProjetoDeTesteFramework
                 combinacoes4.Contains(s);
             }
         }
-
-        //[Benchmark]
-        //public void TesteComListaContains()
-        //{
-        //    foreach (string s in combinacoes)
-        //    {
-        //        combinacoes2.Contains(s);
-        //    }
-        //}
 
         [Benchmark]
         public void TesteComHashSetParallel()

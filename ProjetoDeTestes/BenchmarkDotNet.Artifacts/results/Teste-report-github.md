@@ -8,10 +8,9 @@ BenchmarkDotNet v0.13.10, Windows 11 (10.0.22631.2715/23H2/2023Update/SunValley3
 
 
 ```
-| Method                        | Mean            | Error         | StdDev        | Rank | Gen0    | Gen1   | Allocated |
-|------------------------------ |----------------:|--------------:|--------------:|-----:|--------:|-------:|----------:|
-| TesteComListaContains         | 2,879,471.79 μs | 55,419.090 μs | 72,060.472 μs |    5 |       - |      - |     640 B |
-| TesteComListaContainsParallel |   583,472.60 μs | 11,526.160 μs | 14,576.901 μs |    4 |       - |      - |    7336 B |
-| TesteComListaAny              |        47.76 μs |      0.911 μs |      0.808 μs |    1 |       - |      - |     104 B |
-| TesteComHashSet               |       581.28 μs |     11.586 μs |     15.467 μs |    2 |       - |      - |       1 B |
-| TesteComHashSetParallel       |       999.97 μs |     35.423 μs |    104.445 μs |    3 | 12.6953 | 1.9531 |  113665 B |
+| Method                        | Mean          | Error        | StdDev       | Rank | Gen0    | Gen1   | Allocated |
+|------------------------------ |--------------:|-------------:|-------------:|-----:|--------:|-------:|----------:|
+| TesteComListaContains         |      23.69 μs |     0.186 μs |     0.165 μs |    1 |       - |      - |         - |
+| TesteComListaContainsParallel | 539,647.45 μs | 5,343.401 μs | 4,998.221 μs |    4 |       - |      - |    7624 B |
+| TesteComHashSet               |     558.16 μs |     7.796 μs |     6.911 μs |    2 |       - |      - |       1 B |
+| TesteComHashSetParallel       |     995.72 μs |    30.795 μs |    90.799 μs |    3 | 11.7188 | 0.9766 |  110274 B |

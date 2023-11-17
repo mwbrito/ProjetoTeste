@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/QRnmnaSsCFJYuSP2rN1ljSwSeIiWArhRT47wRMIp0GjZPlbj3hfvQoUNxLIwq5Rc+IRZ/iXQ3/gnb4/qXneqg==",
+  "dgSpecHash": "WyqctfuM5Nlm37sRg4DBGHzFgbLbBRz97NlNuaHpoKnK9BiD2Ya49ClXTmTt3yXmHB7wN1T1TePIzisvutKWHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoDeTestes\\ProjetoDeTestes\\ProjetoDeTestes.csproj",
+  "projectFilePath": "C:\\Users\\mwsbrito\\source\\repos\\ProjetoTeste\\ProjetoDeTestes\\ProjetoDeTestes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mwsbrito\\.nuget\\packages\\benchmarkdotnet\\0.13.10\\benchmarkdotnet.0.13.10.nupkg.sha512",
     "C:\\Users\\mwsbrito\\.nuget\\packages\\benchmarkdotnet.annotations\\0.13.10\\benchmarkdotnet.annotations.0.13.10.nupkg.sha512",

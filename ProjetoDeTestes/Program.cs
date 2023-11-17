@@ -1,6 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
-using System.Reflection.Metadata.Ecma335;
 
 internal class Program
 {
@@ -9,6 +8,33 @@ internal class Program
     {
         var resultado = BenchmarkRunner.Run<Teste>();
         //Teste teste = new Teste();
+
+        //Stopwatch stopwatch = new Stopwatch();
+
+        //stopwatch.Reset();
+        //stopwatch.Start();
+        //teste.TesteComListaContains();
+        //stopwatch.Stop();
+        //Console.WriteLine($"TesteComListaContains {stopwatch.ElapsedMilliseconds.ToString()}");
+
+        //stopwatch.Reset();
+        //stopwatch.Start();
+        //teste.TesteComListaContainsParallel();
+        //stopwatch.Stop();
+        //Console.WriteLine($"TesteComListaContainsParallel {stopwatch.ElapsedMilliseconds.ToString()}");
+
+        //stopwatch.Reset();
+        //stopwatch.Start();
+        //teste.TesteComHashSet();
+        //stopwatch.Stop();
+        //Console.WriteLine($"TesteComHashSet {stopwatch.ElapsedMilliseconds.ToString()}");
+
+        //stopwatch.Reset();
+        //stopwatch.Start();
+        //teste.TesteComHashSetParallel();
+        //stopwatch.Stop();
+        //Console.WriteLine($"TesteComHashSetParallel {stopwatch.ElapsedMilliseconds.ToString()}");
+
     }
 }
 
@@ -47,7 +73,6 @@ public class Teste
         combinacoes.AddRange(combinacoes3);
         combinacoes2.AddRange(combinacoes3.OrderBy(x => x));
         combinacoes4.UnionWith(combinacoes2);
-
     }
 
 
@@ -69,11 +94,6 @@ public class Teste
         );
     }
     [Benchmark]
-    public void TesteComListaAny()
-    {
-        combinacoes.Any(x => combinacoes2.Contains(x));
-    }
-    [Benchmark]
     public void TesteComHashSet()
     {
         foreach (string s in combinacoes3)
@@ -81,16 +101,7 @@ public class Teste
             combinacoes4.Contains(s);
         }
     }
-
-    //[Benchmark]
-    //public void TesteComListaContains()
-    //{
-    //    foreach (string s in combinacoes)
-    //    {
-    //        combinacoes2.Contains(s);
-    //    }
-    //}
-
+    
     [Benchmark]
     public void TesteComHashSetParallel()
     {
@@ -101,73 +112,3 @@ public class Teste
         );
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//[Benchmark]
-//public void escreveArquivo()
-//{
-//    //
-
-//    foreach (string s in list)
-//    {
-//        foreach (string x in list)
-//        {
-//            foreach (string y in list)
-//            {
-//                foreach (string z in list)
-//                {
-//                    //string d = $"{s}{x}{y}{z}";
-//                    demo dd = new demo();
-//                    dd.ss = $"{s}{x}{y}{z}";
-
-//                    combinacoes.Add(dd.ss);
-//                    if (combinacoes.Count() >= 10000) break;
-//                }
-//                if (combinacoes.Count() >= 10000) break;
-//            }
-//            if (combinacoes.Count() >= 10000) break;
-//        }
-//        if (combinacoes.Count() >= 10000) break;
-//    }
-
-//    //File.WriteAllLines("c:\\dev\\combinacoes.txt", combinacoes);
-//}
-
-//[Benchmark]
-//public void escreveArquivo2()
-//{
-//    //List<string> combinacoes = new List<string>();
-
-//    foreach (string s in list)
-//    {
-//        foreach (string x in list)
-//        {
-//            foreach (string y in list)
-//            {
-//                foreach (string z in list)
-//                {
-//                    combinacoes2.Add($"{s}{x}{y}{z}");
-//                    if (combinacoes2.Count() >= 10000) break;
-//                }
-//                if (combinacoes2.Count() >= 10000) break;
-//            }
-//            if (combinacoes2.Count() >= 10000) break;
-//        }
-//        if (combinacoes2.Count() >= 10000) break;
-//    }
-
-//    //File.WriteAllLines("c:\\dev\\combinacoes2.txt", combinacoes);
-//}
-//}

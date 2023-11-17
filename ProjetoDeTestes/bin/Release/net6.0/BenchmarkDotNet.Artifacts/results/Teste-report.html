@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>Teste-20231115-124922</title>
+<title>Teste-20231117-000743</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -16,17 +16,18 @@
 BenchmarkDotNet v0.13.10, Windows 11 (10.0.22631.2715/23H2/2023Update/SunValley3)
 12th Gen Intel Core i5-12400F, 1 CPU, 12 logical and 6 physical cores
 .NET SDK 8.0.100
-  [Host]     : .NET 6.0.25 (6.0.2523.51912), X64 RyuJIT AVX2 [AttachedDebugger]
+  [Host]     : .NET 6.0.25 (6.0.2523.51912), X64 RyuJIT AVX2
   DefaultJob : .NET 6.0.25 (6.0.2523.51912), X64 RyuJIT AVX2
 </code></pre>
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>Method         </th><th>Mean          </th><th>Error      </th><th>StdDev     </th><th>Rank</th><th>Gen0</th><th>Allocated</th>
+<thead><tr><th>Method                 </th><th>Mean    </th><th>Error </th><th>StdDev</th><th>Rank</th><th>Gen0</th><th>Gen1</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>TesteComListaAny</td><td>29.245 ns</td><td>0.2719 ns</td><td>0.2544 ns</td><td>2</td><td>0.0110</td><td>104 B</td>
-</tr><tr><td>TesteComHashSet</td><td>1.796 ns</td><td>0.0172 ns</td><td>0.0144 ns</td><td>1</td><td>-</td><td>-</td>
-</tr><tr><td>TesteComListaContains</td><td>2,798,502,233.333 ns</td><td>9,767,576.4014 ns</td><td>9,136,597.0261 ns</td><td>3</td><td>-</td><td>14664 B</td>
+</thead><tbody><tr><td>TesteComListaContains</td><td>2,613,747.7 &mu;s</td><td>12,816.25 &mu;s</td><td>11,988.32 &mu;s</td><td>4</td><td>-</td><td>-</td><td>5408 B</td>
+</tr><tr><td>TesteComListaContainsParallel</td><td>534,983.5 &mu;s</td><td>4,736.87 &mu;s</td><td>4,430.87 &mu;s</td><td>3</td><td>-</td><td>-</td><td>6160 B</td>
+</tr><tr><td>TesteComHashSet</td><td>560.6 &mu;s</td><td>3.41 &mu;s</td><td>3.03 &mu;s</td><td>1</td><td>-</td><td>-</td><td>1 B</td>
+</tr><tr><td>TesteComHashSetParallel</td><td>985.8 &mu;s</td><td>33.05 &mu;s</td><td>97.46 &mu;s</td><td>2</td><td>11.7188</td><td>0.9766</td><td>103629 B</td>
 </tr></tbody></table>
 </body>
 </html>
